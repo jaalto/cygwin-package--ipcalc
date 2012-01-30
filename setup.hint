@@ -1,0 +1,9 @@
+sdesc: "Parameter calculator for IPv4 addresses"
+ldesc: "Program takes an IP address and netmask in CIDR notation or dotted
+decimal notation and calculates the resulting broadcast, network,
+Cisco wildcard mask, and host range. By giving a second netmask, you
+can design sub- and supernetworks. It is also intended to be a
+teaching tool and presents the results as easy-to-understand binary
+values."
+category: Utils Perl
+requires: cygwin perl

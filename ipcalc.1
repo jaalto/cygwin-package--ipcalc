@@ -1,0 +1,61 @@
+.\" -*- nroff -*-
+.\"
+.\" ipcalc.1
+.\"
+.\" This program was written by
+.\" Krischan Jodies <krischan@jodies.de>
+.\"
+.\" This manpage was created by:
+.\" Nick Clifford <zaf@nrc.co.nz>
+.\" 
+.\" The author of the program retains copyrights to the program, however
+.\" his manpage is Copyright (c) 2003   Nick Clifford 
+.\"
+.\" This program and this manpage is distributed under the terms of the 
+.\" GNU General Public License. See COPYING for additional information.
+.\"
+.TH ipcalc 1 .\" "ipcalc Manual" "Jan 25, 2003"
+.SH NAME
+ipcalc - An IP Netmask/broadcast/etc calculator
+.SH SYNTAX 
+\fB ipcalc \fR [-n|-h|-v|-help] <ADDRESS>[[/]<NETMASK>] [NETMASK]
+.SH DESCRIPTION
+\fBipcalc\fR takes an IP address and netmask and calculates 
+the resulting broadcast,
+network, Cisco wildcard mask, and host range. By giving a second netmask, you
+can design sub- and supernetworks. It is also intended to be a teaching tool
+and presents the results as easy-to-understand binary values.
+.TP
+\fB-n\fR
+Don't display ANSI color codes
+.TP
+\fB-b\fR
+Suppress the bitwise output
+.TP
+\fB-c\fR
+Just print bit-count-mask of given address
+.TP
+\fB-h\fR
+Display results as HTML
+.TP
+\fB-help\fR
+Longer help text
+.TP
+\fB-v\fR
+Print Version
+.SH EXAMPLES
+ipcalc 192.168.0.1/24
+.PP
+ipcalc 192.168.0.1/255.255.128.0
+.PP
+ipcalc 192.168.0.1 255.255.128.0 255.255.192.0
+.PP
+ipcalc 192.168.0.1 0.0.63.255
+.SH AUTHOR
+     Written by Krischan Jodies <krischan@jodies.de>
+.SH "SEE ALSO"
+.BR ipsc (1)
+.BR gipsc (1)
+.PP
+The ipcalc website: http://jodies.de/ipcalc
+

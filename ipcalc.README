@@ -1,0 +1,75 @@
+ipcalc
+------------------------------------------
+
+Parameter calculator for IPv4 addresses
+
+Program takes an IP address and netmask in CIDR notation or dotted
+decimal notation and calculates the resulting broadcast, network,
+Cisco wildcard mask, and host range. By giving a second netmask, you
+can design sub- and supernetworks. It is also intended to be a
+teaching tool and presents the results as easy-to-understand binary
+values.
+
+Install notes:
+
+  A CGI wrapper is provided to enable colorful HTML display through a
+  webserver. See /usr/share/doc/ipcalc-*/examples/
+
+  You need to install CPAN CGI.pm in order to use the cgi version.
+
+Runtime requirements:
+  cygwin
+  perl
+
+Build requirements:
+  cygwin
+
+Canonical homepage:
+  http://jodies.de/ipcalc
+  http://packages.debian.org/unstable/ipcalc
+
+Canonical download:
+  See above
+
+Version control repository:
+
+Mailing list:
+
+Forum / Wiki:
+
+IRC channel:
+
+Upstream contact:
+  Maintainer: Krischan Jodies <krischan@jodies.de>
+  Bugs: Krischan Jodies <krischan@jodies.de>
+
+License:
+  GPL
+
+Language:
+  Perl
+
+------------------------------------------
+
+Build instructions:
+  unpack ipcalc-*-src.tar.bz2
+    if you use setup to install this src package, it will be
+    unpacked under /usr/src automatically
+  cd /usr/src
+  ./ipcalc*.sh all
+
+------------------------------------------
+
+Files included in the binary distribution:
+  See content of *.tar.gz
+
+------------------------------------------
+
+Port Notes:
+- No manual pages. Copied from Debian
+
+----- version 0.41-1 -----
+- Initial release 2008-02-25 Jari Aalto
+
+Cygwin port maintained by: Jari Aalto <jari.aalto@cante.net>
+Copyright (C) 2008 Jari Aalto; Licensed under GPL v2 or later
