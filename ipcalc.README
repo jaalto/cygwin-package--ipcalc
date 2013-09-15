@@ -23,6 +23,7 @@ Runtime requirements:
 
 Build requirements:
   cygwin
+  quilt
 
 Canonical homepage:
   http://jodies.de/ipcalc
