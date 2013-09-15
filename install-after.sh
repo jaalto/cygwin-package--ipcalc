@@ -37,7 +37,7 @@ Main()
     sharedir=$root/usr/share
     mandirdir=$sharedir/man/man1
 
-    docdir=$(cd $root/usr/share/doc/[a-z]*[0-9] && pwd)
+    docdir=$(cd $root/usr/share/doc/[a-z]* && pwd)
     [ "$docdir" ] || return 0
 
     # echo ">> Copy CGI script"
