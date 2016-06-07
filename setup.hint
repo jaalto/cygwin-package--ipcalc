@@ -1,3 +1,4 @@
+# ARCH=noarch
 sdesc: "Parameter calculator for IPv4 addresses"
 ldesc: "Program takes an IP address and netmask in CIDR notation or dotted
 decimal notation and calculates the resulting broadcast, network,
